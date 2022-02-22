@@ -1,0 +1,16 @@
+.symptoms {
+    margin: 4rem;
+    .info {
+      @include enableFlex(true);
+      .description {
+        width: 40%;
+        text-align: center;
+      }
+    }
+    .image {
+      @include enableFlex();
+      img {
+        width: 90%;
+      }
+    }
+  }

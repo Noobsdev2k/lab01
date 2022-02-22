@@ -1,0 +1,63 @@
+.solutions {
+    position: relative;
+    .virus {
+      position: absolute;
+      top: 34rem;
+      img {
+        height: 12rem;
+      }
+    }
+    .virus2 {
+      position: absolute;
+      top: 104rem;
+      right: 0;
+      img {
+        height: 12rem;
+      }
+    }
+    .virus3 {
+      position: absolute;
+      top: 99rem;
+      right: 2rem;
+      img {
+        height: 6rem;
+      }
+    }
+    .info {
+      @include enableFlex(true);
+      .description {
+        width: 40%;
+        text-align: center;
+      }
+    }
+    .content {
+      margin: 4rem 9rem;
+      .solution {
+        @include enableFlex();
+        gap: 5rem;
+        .solution-info {
+          display: flex;
+          gap: 2rem;
+          .round {
+            @include enableFlex();
+            background-color: #ffe6e8;
+            color: #ef233c;
+            font-size: 2em;
+            border-radius: 100%;
+            height: 5rem;
+            width: 20rem;
+          }
+          .info-container {
+            .title {
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+        .image {
+          img {
+            height: 30rem;
+          }
+        }
+      }
+    }
+  }

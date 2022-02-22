@@ -1,0 +1,30 @@
+nav {
+    margin: 0 2rem;
+    padding: 2rem;
+    .container {
+      @include enableFlex();
+      justify-content: space-between;
+      .brand {
+        @include enableFlex();
+        justify-content: space-between;
+        .responsive-toggle {
+          display: none;
+        }
+      }
+      .links {
+        ul {
+          li {
+
+            .active {
+              color: $secondaryColor;
+            }
+            button {
+              background-color: white;
+              border: 0.1rem solid $secondaryColor;
+              color: $secondaryColor;
+            }
+          }
+        }
+      }
+    }
+  }

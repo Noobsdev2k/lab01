@@ -1,0 +1,130 @@
+// Colors and Fonts
+$primaryColor: #248277;
+$secondaryColor: #ef233c;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+// Reset
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  &::-webkit-scrollbar {
+    background-color: white;
+    width: 0.4rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $secondaryColor;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Mixins
+@mixin enableFlex($direction: false) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @if $direction {
+    flex-direction: column;
+  }
+}
+
+//base
+
+button {
+  background-color: $secondaryColor;
+  border: none;
+  padding: 1.3rem 3rem;
+  border-radius: 3rem;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  border: 0.1rem solid transparent;
+  &:hover {
+    background-color: white;
+    border-color: $secondaryColor;
+    color: $secondaryColor;
+  }
+}
+
+h1 {
+  color: $primaryColor;
+  font-size: 3em;
+}
+
+h2 {
+  color: $primaryColor;
+  font-size: 2.2em;
+}
+
+h3 {
+  color: $secondaryColor;
+  font-size: 1.4em;
+}
+h4 {
+  color: $secondaryColor;
+  font-size: 1.2em;
+}
+h5 {
+  color: rgb(116, 116, 116);
+  font-weight: 500;
+  font-size: 1.15em;
+  letter-spacing: 0.05rem;
+  line-height: 1.7em;
+}
+p {
+  color: rgb(116, 116, 116);
+  font-size: 1.1em;
+  letter-spacing: 0.04em;
+  line-height: 1.5em;
+}
+
+a {
+  color: $primaryColor;
+  transition: 0.3s ease-in-out;
+  font-size: 1.3em;
+  margin: 0 2em;
+  &:hover {
+    color: $secondaryColor;
+  }
+}
+
+.info {
+  .title {
+    margin-top: 0.5rem;
+  }
+  .description {
+    margin: 1.2rem 0;
+  }
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}

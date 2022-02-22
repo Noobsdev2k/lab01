@@ -1,0 +1,55 @@
+.contagion {
+    margin: 2rem 4rem;
+    .info {
+      @include enableFlex(true);
+  
+      .description {
+        width: 40%;
+        text-align: center;
+      }
+    }
+    .content {
+      position: relative;
+      .virus {
+        position: absolute;
+        left: -0.5rem;
+        top: 7rem;
+        img {
+          height: 20rem;
+        }
+      }
+    }
+    .cards {
+      @include enableFlex();
+  
+      gap: 4rem;
+      margin-top: 1rem;
+      .card {
+        height: 25rem;
+        width: 20rem;
+        @include enableFlex();
+  
+        .text {
+          padding: 2rem;
+          text-align: center;
+          .title {
+            margin-bottom: 1rem;
+          }
+        }
+        img {
+          max-height: 8rem;
+        }
+        transition: 0.2s ease-in-out;
+        border-bottom: 0.2rem solid white;
+        &:hover {
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+            rgba(17, 17, 26, 0.1) 0px 8px 24px,
+            rgba(17, 17, 26, 0.1) 0px 16px 56px;
+          border-bottom: 0.2rem solid $secondaryColor;
+        }
+        flex-direction: column;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+          rgba(17, 17, 26, 0.05) 0px 8px 32px;
+      }
+    }
+  }

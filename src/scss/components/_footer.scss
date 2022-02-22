@@ -1,0 +1,22 @@
+footer {
+    margin: 3rem 4rem;
+    @include enableFlex();
+    justify-content: space-between;
+    .social-links {
+      i {
+        font-size: 1.4em;
+        margin: 0 0.7rem;
+        color: $primaryColor;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+  
+  .copyright {
+    @include enableFlex();
+    margin: 1rem 0;
+    color: $primaryColor;
+  }

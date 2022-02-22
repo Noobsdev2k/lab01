@@ -1,0 +1,16 @@
+.about {
+    display: flex;
+    align-items: center;
+    margin: 2rem 4rem;
+    gap: 5rem;
+    button {
+      background-color: #ffe6e8;
+      color: $secondaryColor;
+    }
+    .image {
+      img {
+        width: 40rem;
+      }
+    }
+  }
+  

@@ -1,0 +1,23 @@
+.contact {
+    margin: 2rem 4rem;
+    @include enableFlex(true);
+  
+    .form {
+      margin-top: 2rem;
+      position: relative;
+      input {
+        border-radius: 10rem;
+        width: 40rem;
+        border: none;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+          rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        padding: 2rem;
+      }
+      button {
+        position: absolute;
+        right: 0.5rem;
+        top: 0.35rem;
+        padding: 1.4rem 4rem;
+      }
+    }
+  }
