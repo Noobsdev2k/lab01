@@ -10,6 +10,7 @@ import Map from "./components/map";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 
+
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
